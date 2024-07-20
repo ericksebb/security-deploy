@@ -5,10 +5,13 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 async function bootstrap() {
   
   const app = await NestFactory.create(AppModule);
+
+ /*
   app.enableCors({
     origin: 'http://localhost:4200',
     methods: 'GET,POST,PATCH,DELETE',
   });
+*/
 
   const config = new DocumentBuilder()
     .setTitle('Arduino API')
